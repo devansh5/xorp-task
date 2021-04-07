@@ -24,8 +24,8 @@ export default function App() {
       axios.get('https://api.xorp.io/middleware/v1.0/agent/location')
         .then((res) => {
           
-          setLng(res.data.data.latitude);
-          setLat(res.data.data.longitude);
+          setLng(res.data.data.longitude);
+          setLat(res.data.data.latitude);
         })
       }
         ,10000)
